@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<!-- Google Analytics (GA4) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Acceso exclusivo — FLOATER</title>
+<meta name="description" content="Sumate a la lista de acceso exclusivo de FLOATER y enterate antes de los lanzamientos limitados.">
+<meta property="og:title" content="Acceso exclusivo — FLOATER">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;1,6..96,400&family=Inter:wght@300;400;500;600&family=Permanent+Marker&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css?v=23">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="site-header__left">
+    <button class="icon-btn" data-menu-open aria-label="Menú">
+      <svg viewBox="0 0 24 24"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="21" y2="17"/></svg>
+    </button>
+  </div>
+  <div class="site-header__center">
+    <a href="index.html" class="wordmark wordmark--md">FLOATER</a>
+  </div>
+  <div class="site-header__right">
+    <a href="perfil.html" class="icon-btn" aria-label="Acceso exclusivo">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-7 8-7s8 3 8 7"/></svg>
+    </a>
+    <button class="icon-btn" data-cart-open aria-label="Carrito">
+      <svg viewBox="0 0 24 24"><path d="M6 8h12l-1 12H7L6 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+      <span class="cart-count" data-cart-count></span>
+    </button>
+  </div>
+</header>
+
+<div class="mobile-menu">
+  <button class="mobile-menu__close" data-menu-close>Cerrar</button>
+  <a href="index.html">Home</a>
+  <a href="catalog.html">Catálogo</a>
+  <a href="ofertas.html">Ofertas</a>
+  <a href="nuevos.html">Nuevos productos</a>
+  <a href="cart.html">Carrito</a>
+  <a href="contacto.html">Contacto</a>
+</div>
+
+<main class="checkout" style="max-width:520px;">
+  <div data-signup-form-wrap>
+    <p class="eyebrow center" style="text-align:center;">Acceso exclusivo</p>
+    <h1 class="wordmark" style="font-size:1.5rem;text-align:center;margin-bottom:20px;line-height:1.4;">
+      Lo que no vas a ver en el catálogo,<br>lo vas a ver primero acá.
+    </h1>
+    <p style="text-align:center;font-size:0.85rem;color:var(--gray);max-width:400px;margin:0 auto 40px;line-height:1.8;">
+      Dejá tu mail y vas a enterarte antes que nadie de lanzamientos únicos y limitados —
+      piezas que salen una sola vez y no vuelven a estar disponibles.
+    </p>
+    <form data-signup-form>
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" required placeholder="tu@mail.com">
+      </div>
+      <button type="submit" class="btn btn--dark btn--block" style="margin-top:12px;">Quiero acceso</button>
+    </form>
+    <p class="notice">Todavía no está conectado a un servicio de mail real — por ahora esto es una simulación del flujo.</p>
+  </div>
+
+  <div data-signup-confirm style="display:none;text-align:center;padding:60px 0;">
+    <p class="eyebrow">Listo</p>
+    <h2 class="wordmark" style="font-size:1.3rem;margin-bottom:16px;">Ya estás en la lista.</h2>
+    <p style="color:var(--gray);font-size:0.85rem;max-width:380px;margin:0 auto 32px;">
+      Cuando salga algo único o limitado, vas a ser de los primeros en saberlo.
+    </p>
+    <a href="index.html" class="btn">Volver al home</a>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <a href="index.html" class="wordmark wordmark--sm">FLOATER</a>
+  <nav>
+    <a href="catalog.html">Catálogo</a>
+    <a href="cart.html">Carrito</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
+  <small>© 2026 FLOATER. Todos los derechos reservados.</small>
+</footer>
+
+
+<div class="cart-drawer" data-cart-drawer>
+  <div class="cart-drawer__overlay" data-cart-drawer-close></div>
+  <aside class="cart-drawer__panel">
+    <div class="cart-drawer__head">
+      <span class="eyebrow" style="margin:0;">Carrito</span>
+      <button class="cart-drawer__close" data-cart-drawer-close aria-label="Cerrar carrito">Cerrar ✕</button>
+    </div>
+    <div class="cart-drawer__body">
+      <div data-cart-list></div>
+      <p class="cart-empty" data-cart-empty style="display:none;">Tu carrito está vacío. <a href="catalog.html">Ver catálogo</a></p>
+      <p class="cart-saved-note" data-cart-saved-note style="display:none;"></p>
+    </div>
+    <div class="cart-drawer__foot">
+      <div class="cart-summary" data-cart-summary>
+        <span>Total a comprar ahora</span>
+        <span data-cart-total>—</span>
+      </div>
+      <a href="checkout.html" class="btn btn--dark btn--block" data-go-checkout>Ir a checkout</a>
+    </div>
+  </aside>
+</div>
+
+<script src="js/script.js?v=14"></script>
+</body>
+</html>
