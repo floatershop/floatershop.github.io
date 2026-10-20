@@ -98,6 +98,146 @@ const PRODUCTS = [
       frente: "assets/products/remera-blanca-tsixx/frente-cutout.png",
       espalda: "assets/products/remera-blanca-tsixx/espalda-cutout.png"
     }
+  },
+  {
+    id: "remera-ml-blanca-conejo",
+    name: "REMERA MANGA LARGA BLANCA CONEJO",
+    category: "remeras",
+    price: 0, // pendiente de definir
+    onSale: false,
+    salePrice: null,
+    sizes: ["S", "M", "L", "XL"],
+    description: "Texto pendiente de confirmar con la marca.",
+    material: "Pendiente",
+    fit: "Regular",
+    images: {
+      frente: "assets/products/remera-ml-blanca-conejo/frente-cutout.png"
+    }
+  },
+  {
+    id: "remera-ml-blanca-is",
+    name: "REMERA MANGA LARGA BLANCA +S",
+    category: "remeras",
+    price: 0, // pendiente de definir
+    onSale: false,
+    salePrice: null,
+    sizes: ["S", "M", "L", "XL"],
+    description: "Texto pendiente de confirmar con la marca.",
+    material: "Pendiente",
+    fit: "Regular",
+    images: {
+      frente: "assets/products/remera-ml-blanca-is/frente-cutout.png"
+    }
+  },
+  {
+    id: "remera-ml-blanca-cruz",
+    name: "REMERA MANGA LARGA BLANCA CRUZ TSIXX",
+    category: "remeras",
+    price: 0, // pendiente de definir
+    onSale: false,
+    salePrice: null,
+    sizes: ["S", "M", "L", "XL"],
+    description: "Texto pendiente de confirmar con la marca.",
+    material: "Pendiente",
+    fit: "Regular",
+    images: {
+      frente: "assets/products/remera-ml-blanca-cruz/frente-cutout.png"
+    }
+  },
+  {
+    id: "remera-ml-blanca-metal-manga",
+    name: "REMERA MANGA LARGA BLANCA METAL + MANGA",
+    category: "remeras",
+    price: 0, // pendiente de definir
+    onSale: false,
+    salePrice: null,
+    sizes: ["S", "M", "L", "XL"],
+    description: "Texto pendiente de confirmar con la marca.",
+    material: "Pendiente",
+    fit: "Regular",
+    images: {
+      frente: "assets/products/remera-ml-blanca-metal-manga/frente-cutout.png",
+      espalda: "assets/products/remera-ml-blanca-metal-manga/espalda-cutout.png"
+    }
+  },
+  {
+    id: "remera-ml-blanca-lisa",
+    name: "REMERA MANGA LARGA BLANCA LISA",
+    category: "remeras",
+    price: 0, // pendiente de definir
+    onSale: false,
+    salePrice: null,
+    sizes: ["S", "M", "L", "XL"],
+    description: "Texto pendiente de confirmar con la marca.",
+    material: "Pendiente",
+    fit: "Regular",
+    images: {
+      frente: "assets/products/remera-ml-blanca-lisa/frente-cutout.png"
+    }
+  },
+  {
+    id: "remera-mc-blanca-figuras",
+    name: "REMERA MANGA CORTA BLANCA FIGURAS",
+    category: "remeras",
+    price: 0, // pendiente de definir
+    onSale: false,
+    salePrice: null,
+    sizes: ["S", "M", "L", "XL"],
+    description: "Texto pendiente de confirmar con la marca.",
+    material: "Pendiente",
+    fit: "Regular",
+    images: {
+      frente: "assets/products/remera-mc-blanca-figuras/frente-cutout.png",
+      espalda: "assets/products/remera-mc-blanca-figuras/espalda-cutout.png"
+    }
+  },
+  {
+    id: "remera-mc-negra-s",
+    name: "REMERA MANGA CORTA NEGRA S",
+    category: "remeras",
+    price: 0, // pendiente de definir
+    onSale: false,
+    salePrice: null,
+    sizes: ["S", "M", "L", "XL"],
+    description: "Texto pendiente de confirmar con la marca.",
+    material: "Pendiente",
+    fit: "Regular",
+    images: {
+      frente: "assets/products/remera-mc-negra-s/frente-cutout.png",
+      espalda: "assets/products/remera-mc-negra-s/espalda-cutout.png"
+    }
+  },
+  {
+    id: "remera-ml-negra-llamas",
+    name: "REMERA MANGA LARGA NEGRA LLAMAS",
+    category: "remeras",
+    price: 0, // pendiente de definir
+    onSale: false,
+    salePrice: null,
+    sizes: ["S", "M", "L", "XL"],
+    description: "Texto pendiente de confirmar con la marca.",
+    material: "Pendiente",
+    fit: "Regular",
+    images: {
+      frente: "assets/products/remera-ml-negra-llamas/frente-cutout.png",
+      espalda: "assets/products/remera-ml-negra-llamas/espalda-cutout.png"
+    }
+  },
+  {
+    id: "musculosa-blanca-tsixx",
+    name: "MUSCULOSA BLANCA TSIXX",
+    category: "musculosas",
+    price: 0, // pendiente de definir
+    onSale: false,
+    salePrice: null,
+    sizes: ["S", "M", "L", "XL"],
+    description: "Texto pendiente de confirmar con la marca.",
+    material: "Pendiente",
+    fit: "Regular",
+    images: {
+      frente: "assets/products/musculosa-blanca-tsixx/frente-cutout.png",
+      espalda: "assets/products/musculosa-blanca-tsixx/espalda-cutout.png"
+    }
   }
   // Cuando lleguen los jeans/jorts, se suman acá con category: "jeans"
 ];
@@ -378,7 +518,7 @@ function renderHomeFeatured(){
   container.innerHTML = PRODUCTS.slice(-3).map(catalogCardHTML).join("");
 }
 
-const CATEGORY_LABELS = { remeras: "Remeras", jeans: "Jeans" };
+const CATEGORY_LABELS = { remeras: "Remeras", musculosas: "Musculosas", jeans: "Jeans" };
 
 // Agregado rápido desde la tarjeta del catálogo: si el producto tiene un
 // solo talle, un botón alcanza; si tiene varios, cada talle agrega directo
